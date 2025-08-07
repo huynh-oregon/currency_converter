@@ -1,16 +1,15 @@
-import requests
+import time
 
-data = {
-    "amount": 10.00,
-    "from_currency": "USD",
-    "to_currency": "EUR"
-}
+# Write request to pipe
+with open("comm_pipe.txt", "w") as f:
+    f.write("10,USD,EUR")
 
-response = requests.post("http://localhost:5000/convert", json=data)
+# Wait for microservice to process
+print("Request sent. Waiting for response...")
+time.sleep(2)
 
-if response.ok:
-    print("Response JSON:")
-    print(response.json())
-else:
-    print("Error:", response.status_code)
-    print(response.json())
+# Read response from output pipe
+with open("comm_pipe_response.txt", "r") as f:
+    result = f.read()
+
+print("Received response:", result)
