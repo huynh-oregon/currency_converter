@@ -25,7 +25,7 @@ Flow:
 2) User selects a currency and submits.
 3) Frontend calls POST /convert with amount, from_currency, and to_currency.
 4) Service returns either 200 with converted result or 400 with an error.
-
+[![](https://img.plantuml.biz/plantuml/svg/TP5BQyCm48Jl-XL33YK6nqqVfnnAm3Gzjf3s75HvGqLaAQnaqnBytolvKLgQ77Ttvfk1NViWEJIr4L85ntZpnE8OLrhfexG1imqx6yXMc6jRqMVn4MgJpI0z-ijVSTamarLVA9rjYGCnjiIjLeJvnaX_69pZJeWKXyN3W5hXDeidGof0JQ0ha4qOMRicflN2v1WHAznaU7fynJNBG5vCQOjVqEKIf_wQmyXtChxx5rmQhGvJwJCXTnbUdhSnHGqId8O-EVRiwjtKDaTmFqDtiSm8eMetKLAz74LHd3NT9nCnE-xY5_RGjfL6LvbOnx-attq3)](https://editor.plantuml.com/uml/TP5BQyCm48Jl-XL33YK6nqqVfnnAm3Gzjf3s75HvGqLaAQnaqnBytolvKLgQ77Ttvfk1NViWEJIr4L85ntZpnE8OLrhfexG1imqx6yXMc6jRqMVn4MgJpI0z-ijVSTamarLVA9rjYGCnjiIjLeJvnaX_69pZJeWKXyN3W5hXDeidGof0JQ0ha4qOMRicflN2v1WHAznaU7fynJNBG5vCQOjVqEKIf_wQmyXtChxx5rmQhGvJwJCXTnbUdhSnHGqId8O-EVRiwjtKDaTmFqDtiSm8eMetKLAz74LHd3NT9nCnE-xY5_RGjfL6LvbOnx-attq3)
 ---
 Communication Contract
 - Protocol: HTTP
